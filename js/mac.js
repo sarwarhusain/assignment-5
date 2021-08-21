@@ -7,6 +7,7 @@ function updateTotal() {
   const deliveryCharge = Number(deliveryCost.innerText);
   const totalCost = bestTotalPrice + memoryCost + storageCost + deliveryCharge;
   totalPrice.innerText = totalCost;
+  inTotalPrice.innerText = totalCost;
 }
 
 // <!--------Memory Area Start-------->
@@ -87,7 +88,7 @@ bestPrice.addEventListener('click', function () {
   updateTotal();
 });
 
-inTotal.addEventListener('click', function () {
-  inTotal.innerText = totalCost.value;
+inTotalPrice.addEventListener('click', function () {
+  inTotalPrice.innerText = totalCost.value;
   // updateTotal();
 });
