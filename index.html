@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mac-Book-Pro</title>
+  <!-- tailwind cdn -->
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+  <main>
+    <section>
+      <div class="flex">
+        <div class="mac-img px-10">
+          <img src="images/mac.png" alt="">
+        </div>
+        <div class="mr-5 pb-10 px-10">
+          <h1 class="text-5xl font-semibold">Customize Your Blue 24-inch iMac With Apple M1 Chip.</h1>
+          <!-- memory area -->
+          <div class="memory py-2">
+            <h3 class="font-bold">Memory</h3>
+            <button id="memory8gb" class="p-3 border rounded-2xl font-semibold">8Gb unified memory</button>
+            <button id="memory16gb" class="p-3 border rounded-2xl font-semibold">16Gb unified memory</button>
+          </div>
+          <!------storage area----->
+          <div class="storage py-2">
+            <h3 class="font-bold">Storage</h3>
+            <button id="storage256gb" class="p-3 border rounded-2xl font-semibold">256Gb SSD Storage</button>
+            <button id="storage512gb" class="p-3 border rounded-2xl font-semibold">512Gb SSD Storage</button>
+            <button id="storage1tb" class="p-3 border rounded-2xl font-semibold">1TB SSD Storage</button>
+          </div>
+          <!-- delivery area -->
+
+          <div class="delivery py-2">
+            <h3 class="font-bold">Chose your Delivery Option</h3>
+            <button id="freeDelivery" class="p-3 border rounded-2xl font-semibold">Friday,Aug 21 delivery charge $20</button>
+            <button id="chargeDelivery" class="p-3 border rounded-2xl font-semibold">Friday,Aug 25 FREE Prime delivery</button>
+          </div>
+          <!----------- price area start-------- -->
+          <div class="flex">
+            <div class="price-info py-2 mt-10">
+              <h5 class="font-bold">Best Price</h5>
+              <hr class="py-2">
+              <h5 class="font-bold">Extra Memory Cost</h5>
+              <hr class="py-2">
+              <h5 class="font-bold">Extra storage Cost</h5>
+              <hr class="py-2">
+              <h5 class="font-bold">Delivery Charge</h5>
+              <hr class="py-2">
+              <h5 class="font-bold">Total Price</h5>
+            </div>
+            <div class="price-cost-list py-2 m-10">
+              <h5 class="font-bold">$ <span id="bestPrice">1299</span> </h5>
+              <hr class="py-2">
+              <h5 class="font-bold">$ <span id="extraMemoryCost">0</span> </h5>
+              <hr class=" py-2">
+              <h5 class="font-bold">$ <span id="extraStorageCost">0</span> </h5>
+              <hr class="py-2">
+              <h5 class="font-bold">$ <span id="deliveryCost">0</span> </h5>
+              <hr class="py-2">
+              <h5 class="font-bold">$ <span id="totalPrice">1299</span> </h5>
+              <hr class="py-2">
+            </div>
+          </div>
+          <!----------- price area end-------- -->
+          <!-- ---------promo code------ -->
+          <div class="promo-code">
+            <h5>Add Your Promo Code</h5>
+            <input class="border-2 rounded" type="text" name="" id="">
+            <button class="bg-red-300 border rounded font-semibold">Apply</button>
+          </div>
+        </div>
+      </div>
+      <hr>
+      <h1 class="text-3xl text-center font-semibold">Total:$<span id="inTotal">1299</span> </h1>
+    </section>
+  </main>
+  <script src="js/mac.js"></script>
+</body>
+
+</html>
