@@ -1,3 +1,14 @@
+// calculate total price
+
+function updateTotal() {
+  const bestTotalPrice = Number(bestPrice.innerText);
+  const memoryCost = Number(extraMemoryCost.innerText);
+  const storageCost = Number(extraStorageCost.innerText);
+  const deliveryCharge = Number(deliveryCost.innerText);
+  const totalCost = bestTotalPrice + memoryCost + storageCost + deliveryCharge;
+  totalPrice.innerText = totalCost;
+}
+
 // <!--------Memory Area Start-------->
 
 const memory8gb = document.getElementById('memory8gb');
@@ -29,14 +40,14 @@ storage256gb.addEventListener('click', function () {
 const storage512gb = document.getElementById('storage512gb');
 
 storage512gb.addEventListener('click', function () {
-  extraStorageCost.innerText = '180';
+  extraStorageCost.innerText = '100';
   updateTotal();
 });
 
 const storage1tb = document.getElementById('storage1tb');
 
 storage1tb.addEventListener('click', function () {
-  extraStorageCost.innerText = '2200';
+  extraStorageCost.innerText = '180';
   updateTotal();
 });
 // <!--------Storage Area End-------->
@@ -80,14 +91,3 @@ inTotal.addEventListener('click', function () {
   inTotal.innerText = totalCost.value;
   // updateTotal();
 });
-
-// calculate total price
-
-function updateTotal() {
-  const bestTotalPrice = Number(bestPrice.innerText);
-  const memoryCost = Number(extraMemoryCost.innerText);
-  const storageCost = Number(extraStorageCost.innerText);
-  const deliveryCharge = Number(deliveryCost.innerText);
-  const totalCost = bestTotalPrice + memoryCost + storageCost + deliveryCharge;
-  totalPrice.innerText = totalCost;
-}
