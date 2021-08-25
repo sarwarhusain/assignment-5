@@ -90,5 +90,5 @@ bestPrice.addEventListener('click', function () {
 
 inTotalPrice.addEventListener('click', function () {
   inTotalPrice.innerText = totalCost.value;
-  // updateTotal();
+  updateTotal();
 });
